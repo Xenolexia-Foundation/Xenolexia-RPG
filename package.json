@@ -1,0 +1,44 @@
+{
+    "name": "xenolexia-rpg",
+    "scripts": {
+        "build": "rpgjs build",
+        "dev": "rpgjs dev",
+        "start": "node dist/server/main.mjs",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint main --ext .ts,.vue --fix",
+        "lint:check": "eslint main --ext .ts,.vue",
+        "format": "prettier --write \"main/**/*.ts\" \"main/**/*.vue\"",
+        "format:check": "prettier --check \"main/**/*.ts\" \"main/**/*.vue\"",
+        "postinstall": "node -e \"const fs=require('fs');const p='node_modules/@babel/parser';const src=p+'/lib/index.js';const dst=p+'/index.cjs';if(fs.existsSync(src)&&!fs.existsSync(dst))fs.copyFileSync(src,dst);\""    },
+    "engines": {
+        "node": ">=18"
+    },
+    "dependencies": {
+        "@rpgjs/client": "4.3.0",
+        "@rpgjs/default-gui": "^4.3.0",
+        "@rpgjs/gamepad": "^4.3.0",
+        "@rpgjs/mobile-gui": "^4.3.0",
+        "@rpgjs/server": "4.3.0",
+        "@rpgjs/standalone": "4.3.0",
+        "@rpgjs/types": "4.0.5",
+        "socket.io-client": "4.7.4",
+        "xenolexia-typescript": "file:../xenolexia-typescript/ts-shared-core"
+    },
+    "devDependencies": {
+        "@rpgjs/compiler": "4.3.0",
+        "@types/jest": "^29.5.0",
+        "@types/node": "^20.10.0",
+        "@typescript-eslint/eslint-plugin": "^7.0.0",
+        "@typescript-eslint/parser": "^7.0.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "jest": "^29.7.0",
+        "prettier": "^3.2.5",
+        "ts-jest": "^29.4.6",
+        "typescript": "5.3.3"
+    }
+}
