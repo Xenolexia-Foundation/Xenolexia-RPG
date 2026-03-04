@@ -2,7 +2,7 @@
 
 A **language-learning RPG** built with [RPGJS](https://rpgjs.dev) and TypeScript. Progress in the game depends on using the target language: dialogue choices, vocabulary tasks, and quests are all learning moments.
 
-This project reuses [xenolexia-typescript](../xenolexia-typescript) for vocabulary types, SRS (spaced repetition), and gamification (XP/levels).
+This project reuses [xenolexia-typescript](https://github.com/Xenolexia-Foundation/xenolexia-typescript) for vocabulary types, SRS (spaced repetition), and gamification (XP/levels).
 
 ## Architecture
 
